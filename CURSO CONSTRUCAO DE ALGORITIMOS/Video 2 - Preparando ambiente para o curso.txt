@@ -1,8 +1,0 @@
-No curso iremos principalmente codar em C e C++. 
-
-No vídeo, o cfb cita o aplicativo "CODE BLOCKS" como a melhor IDE para programar nas linguagens citadas anteriormente.
-
-Instale o code blocks nesse link: https://www.codeblocks.org/downloads/binaries/    
-
-Instale essa versão do codeblocks: codeblocks-25.03mingw-setup.exe 
-
