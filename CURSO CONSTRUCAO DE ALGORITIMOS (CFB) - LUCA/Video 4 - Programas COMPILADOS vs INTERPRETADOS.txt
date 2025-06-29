@@ -1,0 +1,42 @@
+Linguagem usada no vídeo: C++
+
+Programas compilados: ex: C, C++... - um programa compilado, é aquele que precisa de transformado em arquivo (.exe, .out) para ser executado, demandando mais tempo para edições e verificações caso seja necessário. 
+
+Programas interpretados: ex: JavaScript, Python... - podemos editar o código e vê-lo rapidamente a edição a partir do browser (como um site), sem ter que gerar outro arquivo executável.
+
+Java: caso particular - O java ele executa o codigo em uma jsv (Java virtual machine) que basicamente nao se enquadra em nenhuma das duas ocasioes citadas acima.
+
+#========================================
+
+NO VIDEO O CFB ENSINA (CASO QUEIRA) A ADICIONAR UM CODIGO BASE PARA COLOCAR QUANDO É CRIADO UM ARQUIVO C++ PARA ADIANTAR O PROCESSO 
+NA IDE CODE BLOCKS. 
+
+Código base: 
+
+#include <iostream> 
+using namespace std; 
+
+int main() { 
+
+}
+
+#========================================
+LINGUAGEM: C++ 
+-
+
+#include <iostream> | --> ESSA BIBLIOTECA 'IOSTREAM', É USADA EM CASOS DE ENTRADA E SAIDA (IN/OUT)  
+
+using namespace std; | --> std = local padrão , namespace = área organizacional
+
+int main() { | --> função principal do código , main = principal
+    cout << "Hello world!"; | --> o cout é usado como saída para o console, ou seja ele mostra a informação na tela do usuário
+    return 0; | --> Utiliza-se para finalizar um código 
+}
+
+Sempre colocar ponto e virgula no final de cada linha de código 
+
+#========================================
+
+
+
+
