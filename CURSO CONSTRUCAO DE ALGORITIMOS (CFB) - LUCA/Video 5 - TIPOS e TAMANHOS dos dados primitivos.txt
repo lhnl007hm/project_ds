@@ -1,0 +1,25 @@
+Linguagem utilizada no vídeo: C++
+
+#------------------------------------
+
+Tipos primitivos: 
+
+int --> valores inteiros, 10, 23, 29, 30 etc
+
+double --> valores quebrados também, como se fosse o float, porem pode-se o double pode armazenar valores maiores (maior quantidade de numeros) que o float: 2.23472332482348234725382529342852273528429423482527
+
+float --> valor quebrados, 10.3, 37.8, 23.12 etc
+
+char --> caracteres, armazena apenas uma caractere, não consigo armazenar um nome por exemplo. Caso queira armazenas um texto utilizasse string (que não é um tipo primitivo da linguagem c++) 
+
+bool --> armazena valor de verdadeiro ou falso (true or false) 
+
+#==================== 
+
+o tipo int, ele consegue armazenar até 2.000.000.000 de valor, caso ultrapasse isso, já é usado outro tipo - long int. 
+
+
+
+
+
+
