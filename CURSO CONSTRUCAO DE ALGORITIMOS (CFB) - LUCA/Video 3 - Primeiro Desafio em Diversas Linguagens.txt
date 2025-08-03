@@ -1,0 +1,25 @@
+Linguagens Usadas no Video --> C, C#, JS, Python, Java
+Códigos na pasta Destinada a Eles.
+Diagrama montado: Acessa-lo na pasta de Diagramas. Necessário obter Draw.io
+#-----------------------------
+
+Fase 1 - Defina bem o problema a ser resolvido
+	 Faça um algoritimo que leia dois números inteiros, calcule a soma destes números e imprima o resultado final.
+-
+Fase 2 - Entenda os detalhes do problema.
+	 Armazenar dois números na memória principal
+	 Armazenar os valores nas áreas A e B 
+	 O resultado da soma será armazenado na área S
+	 Usar o operador de soma para somar A e B 
+-
+Fase 3 - Defina os dados de entrada que serão passados para o algoritmo 
+	 Dois valores inteiros lidos pelo teclado e armazenados nas áreas A e B Respectivamente
+-	 
+Fase 4 - Defina os dados de saída que serão desenvolvidos pelo algoritimo.
+	 Valor inteiro representando a soma de A e B armazenado na área S 
+-
+Fase 5 - Defina o processamento. 
+	 Soma de A e B armazenando o resultado em S 
+-
+Fase 6 - Construa o algoritimo. 
+

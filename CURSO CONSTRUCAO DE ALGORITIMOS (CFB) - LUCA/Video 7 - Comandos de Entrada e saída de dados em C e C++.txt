@@ -1,0 +1,45 @@
+Linguagens Utilizadas: C, C++ 
+#===================================
+
+Linguagem: C++ 
+
+para criar uma variável: 
+
+int nome_variavel1, nome_variavel2 (...);
+
+-----
+
+para colocar um valor qualquer na variável: 
+
+nome_variavel1 = valor;
+
+---- 
+
+para colocar o valor que o usuário quiser na variável: 
+
+cin >> nome_variavel1;
+
+----
+
+#===========================================
+
+Linguagem: C
+
+para criar uma variável: 
+
+int idade, altura
+
+------
+
+para colocar algo na variável: 
+
+idade = 16
+altura = 182
+
+-----
+
+para colocar algo que o usuário digitou na variável: 
+
+scanf("%i", &idade);
+scanf("%i", &altura);
+

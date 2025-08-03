@@ -1,0 +1,22 @@
+Linguagens Utilizadas: C++, JavaScript, Python.
+
+#==============================================
+
+
+Variáveis: o valor pode ser mudado ao longo do código. 
+
+Constante: o valor não é alterado ao longo do código - é um valor fixo
+
+#==============================================
+
+Na linguagem python, não temos como realizar valores constantes, porém, temos uma convenção em que os devs deixam o valor constante em maiúsculo para sinalizar que o valor é uma constante. Exemplo: 
+NOME = "Luca" 
+
+#=============================================
+
+Stack: compartimento de armazenamento na memoria ram que organiza as variáveis dentro dela. 
+
+Heap: compartimento de armazenamento na memoria ram que NAO organiza as variáveis dentro dela, apenas "joga" de qualquer jeito dentro da mesma. 
+
+ 
+
