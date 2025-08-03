@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Escolar</title>
+</head>
+<body>
+    <h1>SISTEMA DE CADASTRO ESCOLAR</h1>
+    <hr>
+    <h2>Informações Pessoais:</h2>
+    <form action="/enviar" method="post">
+      <p>
+        Nome completo: <br>
+        <input type="text" name="nome" placeholder="(...)" required>
+      </p>
+      <p>
+        Data de nascimento: <br>
+        <input type="date" name="nascimento" required>
+      </p>
+      <p>
+        Enviar foto 3x4: <br>
+        <input type="file" name="foto" required accept="image/*">
+      </p>
+      <hr>
+      <h2>Turno:</h2>
+      <p>
+        <input type="radio" name="turno" value="manha"> Manhã <br>
+        <input type="radio" name="turno" value="tarde"> Tarde <br>
+        <input type="radio" name="turno" value="noite"> Noite
+      </p>
+      <hr>
+      <h2>Notas Escolares:</h2>
+      <p>
+        Português: <input type="number" name="nota_portugues" placeholder="0-10" required>
+      </p>
+      <p>
+        Matemática: <input type="number" name="nota_matematica" placeholder="0-10" required>
+      </p>
+      <p>
+        Física: <input type="number" name="nota_fisica" placeholder="0-10" required>
+      </p>
+      <p>
+        Inglês: <input type="number" name="nota_ingles" placeholder="0-10" required>
+      </p>
+      <p>
+        Geografia: <input type="number" name="nota_geografia" placeholder="0-10" required>
+      </p>
+      <hr>
+      <h2>Contato Parental:</h2>
+      <p>
+        Responsável: <br>
+        <select name="responsavel">
+          <option value="pai">Pai</option>
+          <option value="mae">Mãe</option>
+          <option value="outro">Outro</option>
+        </select>
+      </p>
+      <p>
+        Telefone do responsável: <br>
+        <input type="text" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+      </p>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <footer>
+  <center><p>Desenvolvido por Luca N. &copy; 2025</p></center>
+    </footer>
+</body>
+</html>
+
+
