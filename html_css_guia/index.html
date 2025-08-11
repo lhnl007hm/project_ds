@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Interativo de HTML e CSS</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body class="bg-stone-100 text-stone-800">
+    <div class="flex h-screen">
+      <!-- Sidebar Navigation -->
+      <aside class="w-64 bg-stone-200 p-6 overflow-y-auto flex-shrink-0">
+        <h1 class="text-2xl font-bold text-stone-900 mb-6">Guia Interativo</h1>
+        <nav id="main-nav">
+          <ul class="space-y-2">
+            <li>
+              <a
+                href="#overview"
+                class="nav-link font-semibold text-stone-700 hover:text-stone-900 block"
+                >Visão Geral</a
+              >
+            </li>
+
+            <li class="pt-4">
+              <h2
+                class="text-sm font-bold text-stone-500 uppercase tracking-wider"
+              >
+                HTML
+              </h2>
+            </li>
+            <li>
+              <a
+                href="#html-structure"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Estrutura Básica</a
+              >
+            </li>
+            <li>
+              <a
+                href="#html-semantic"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >HTML Semântico</a
+              >
+            </li>
+            <li>
+              <a
+                href="#html-forms"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Formulários</a
+              >
+            </li>
+            <li>
+              <a
+                href="#html-graphics"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Gráficos: Canvas</a
+              >
+            </li>
+
+            <li class="pt-4">
+              <h2
+                class="text-sm font-bold text-stone-500 uppercase tracking-wider"
+              >
+                CSS
+              </h2>
+            </li>
+            <li>
+              <a
+                href="#css-selectors"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Seletores</a
+              >
+            </li>
+            <li>
+              <a
+                href="#css-box-model"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Box Model</a
+              >
+            </li>
+            <li>
+              <a
+                href="#css-positioning"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Posicionamento</a
+              >
+            </li>
+
+            <li class="pt-4">
+              <h2
+                class="text-sm font-bold text-stone-500 uppercase tracking-wider"
+              >
+                Layouts
+              </h2>
+            </li>
+            <li>
+              <a
+                href="#layout-flexbox"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Flexbox</a
+              >
+            </li>
+            <li>
+              <a
+                href="#layout-grid"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Grid Layout</a
+              >
+            </li>
+            <li>
+              <a
+                href="#layout-responsive"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Design Responsivo</a
+              >
+            </li>
+
+            <li class="pt-4">
+              <h2
+                class="text-sm font-bold text-stone-500 uppercase tracking-wider"
+              >
+                Interatividade
+              </h2>
+            </li>
+            <li>
+              <a
+                href="#interactive-transitions"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >Transições e Animações</a
+              >
+            </li>
+
+            <li class="pt-4">
+              <h2
+                class="text-sm font-bold text-stone-500 uppercase tracking-wider"
+              >
+                Ferramentas
+              </h2>
+            </li>
+            <li>
+              <a
+                href="#tools-devtools"
+                class="nav-link text-stone-700 hover:text-stone-900 block"
+                >DevTools</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-8 overflow-y-auto relative">
+        <!-- Overview Section -->
+        <section id="overview" class="content-section">
+          <h2 class="text-4xl font-bold mb-4 text-stone-900">
+            Dominando HTML e CSS
+          </h2>
+          <p class="text-lg mb-6">
+            Bem-vindo ao Guia Interativo de HTML e CSS. Esta aplicação
+            transforma o estudo aprofundado sobre desenvolvimento web em uma
+            experiência prática e explorável.
+          </p>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-3">Como usar este guia</h3>
+            <p class="mb-4">
+              Use a navegação à esquerda para explorar os diferentes tópicos.
+              Cada seção contém explicações, exemplos de código e demonstrações
+              interativas.
+            </p>
+          </div>
+        </section>
+
+        <!-- HTML Structure Section -->
+        <section id="html-structure" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Estrutura Básica do HTML</h2>
+          <p class="text-lg mb-6">
+            Todo documento HTML segue uma estrutura fundamental que os
+            navegadores usam para renderizar a página corretamente.
+          </p>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold mb-3">
+                Anatomia de uma Página
+              </h3>
+              <ul class="space-y-3">
+                <li>
+                  <strong class="text-stone-900 block"
+                    >&lt;!DOCTYPE html&gt;</strong
+                  >
+                  <span>Declaração que define o tipo de documento.</span>
+                </li>
+                <li>
+                  <strong class="text-stone-900 block">&lt;html&gt;</strong>
+                  <span>O elemento raiz que envolve todo o conteúdo.</span>
+                </li>
+                <li>
+                  <strong class="text-stone-900 block">&lt;head&gt;</strong>
+                  <span>Contém metadados como título e links para CSS.</span>
+                </li>
+                <li>
+                  <strong class="text-stone-900 block">&lt;body&gt;</strong>
+                  <span>Contém todo o conteúdo visível da página.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h3 class="text-2xl font-semibold mb-3">Exemplo de Código</h3>
+              <div class="code-block relative" id="code-html-structure">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Título da Página&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Conteúdo Principal&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                <button
+                  class="copy-btn"
+                  onclick="copyCode('code-html-structure')"
+                >
+                  Copiar
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Semantic HTML Section -->
+        <section id="html-semantic" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">HTML Semântico</h2>
+          <p class="text-lg mb-6">
+            Usar tags HTML que descrevem o significado do seu conteúdo é
+            fundamental para acessibilidade e SEO.
+          </p>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-3">
+              Layout Semântico Interativo
+            </h3>
+            <div class="border-2 border-dashed border-stone-300 p-4 rounded-lg">
+              <div
+                id="semantic-header"
+                class="semantic-block bg-blue-100 p-4 rounded-t-lg text-center font-bold text-blue-800 cursor-pointer"
+              >
+                &lt;header&gt;
+              </div>
+              <div
+                id="semantic-nav"
+                class="semantic-block bg-green-100 p-4 mt-4 text-center font-bold text-green-800 cursor-pointer"
+              >
+                &lt;nav&gt;
+              </div>
+              <div
+                id="semantic-main"
+                class="semantic-block bg-yellow-100 p-4 mt-4 text-center font-bold text-yellow-800 cursor-pointer"
+              >
+                &lt;main&gt;
+              </div>
+              <div
+                id="semantic-footer"
+                class="semantic-block bg-gray-200 p-4 mt-4 rounded-b-lg text-center font-bold text-gray-800 cursor-pointer"
+              >
+                &lt;footer&gt;
+              </div>
+            </div>
+            <div
+              id="semantic-info"
+              class="mt-4 p-4 bg-stone-50 rounded-lg min-h-[100px]"
+            >
+              <p class="text-stone-600">
+                Passe o mouse sobre um elemento para saber mais.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Forms Section -->
+        <section id="html-forms" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Formulários HTML5</h2>
+          <p class="text-lg mb-6">
+            O HTML5 aprimorou os formulários com novos tipos de entrada e
+            validação nativa.
+          </p>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <form class="space-y-4">
+              <div>
+                <label
+                  for="form-name"
+                  class="block text-sm font-medium text-stone-700"
+                  >Nome:</label
+                >
+                <input
+                  type="text"
+                  id="form-name"
+                  required
+                  class="mt-1 block w-full rounded-md border-stone-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm invalid:border-red-500"
+                />
+              </div>
+              <button
+                type="submit"
+                class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white shadow-sm hover:bg-indigo-700"
+              >
+                Enviar
+              </button>
+            </form>
+          </div>
+        </section>
+
+        <!-- Graphics Section -->
+        <section id="html-graphics" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Gráficos na Web: Canvas</h2>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <canvas
+              id="graphics-canvas"
+              class="w-full h-64 bg-stone-50 border border-stone-200 rounded-lg"
+            ></canvas>
+            <div class="mt-4 flex gap-2">
+              <button
+                id="draw-rect"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Retângulo
+              </button>
+              <button
+                id="draw-circle"
+                class="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+              >
+                Círculo
+              </button>
+              <button
+                id="clear-canvas"
+                class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
+              >
+                Limpar
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Selectors Section -->
+        <section id="css-selectors" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Seletores CSS</h2>
+          <p class="text-lg mb-6">
+            Seletores são a base do CSS. Eles definem quais elementos HTML serão
+            estilizados. Dominar seletores, desde os básicos (tipo, classe, ID)
+            até os avançados (pseudo-classes, pseudo-elementos e combinadores),
+            é essencial para um controle preciso.
+          </p>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-3">
+              Exemplos de Seletores em Ação
+            </h3>
+            <style>
+              #selectors-demo-area h3 {
+                color: #1d4ed8;
+              } /* Seletor de Tipo */
+              #selectors-demo-area .highlight {
+                background-color: #fef08a;
+              } /* Seletor de Classe */
+              #selectors-demo-area #unique-id {
+                border-left: 4px solid #16a34a;
+                padding-left: 8px;
+              } /* Seletor de ID */
+              #selectors-demo-area a[target="_blank"] {
+                color: #c026d3;
+              } /* Seletor de Atributo */
+              #selectors-demo-area li:first-child {
+                font-weight: bold;
+              } /* Pseudo-classe */
+              #selectors-demo-area p::first-letter {
+                font-size: 1.5em;
+                float: left;
+                margin-right: 4px;
+                line-height: 1;
+              } /* Pseudo-elemento */
+              #selectors-demo-area h3 + p {
+                text-indent: 2em;
+              } /* Combinador Irmão Adjacente */
+            </style>
+            <div id="selectors-demo-area">
+              <h3>Título Estilizado (Seletor de Tipo)</h3>
+              <p>
+                Este parágrafo vem
+                <span class="highlight">imediatamente após o h3</span> e tem um
+                recuo (Combinador `+`). A primeira letra é maior
+                (Pseudo-elemento `::first-letter`).
+              </p>
+              <p id="unique-id">
+                Este parágrafo tem um ID único e uma borda verde à esquerda
+                (Seletor de ID).
+              </p>
+              <ul>
+                <li>Primeiro item da lista (Pseudo-classe `:first-child`)</li>
+                <li>Segundo item da lista.</li>
+              </ul>
+              <a href="#" target="_blank"
+                >Link para nova aba (Seletor de Atributo)</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Box Model Section -->
+        <section id="css-box-model" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">O Modelo de Caixa</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="space-y-3">
+                <div>
+                  <label for="padding-slider" class="block text-sm font-medium"
+                    >Padding: <span id="padding-value">20</span>px</label
+                  >
+                  <input
+                    id="padding-slider"
+                    type="range"
+                    min="0"
+                    max="50"
+                    value="20"
+                    class="w-full"
+                  />
+                </div>
+                <div>
+                  <label for="border-slider" class="block text-sm font-medium"
+                    >Border: <span id="border-value">5</span>px</label
+                  >
+                  <input
+                    id="border-slider"
+                    type="range"
+                    min="0"
+                    max="20"
+                    value="5"
+                    class="w-full"
+                  />
+                </div>
+                <div>
+                  <label for="margin-slider" class="block text-sm font-medium"
+                    >Margin: <span id="margin-value">20</span>px</label
+                  >
+                  <input
+                    id="margin-slider"
+                    type="range"
+                    min="0"
+                    max="50"
+                    value="20"
+                    class="w-full"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex items-center justify-center bg-stone-50 p-4 rounded-lg"
+            >
+              <div
+                id="box-model-demo"
+                class="bg-blue-300 h-24 flex items-center justify-center text-white font-bold rounded"
+                style="width: 200px"
+              >
+                Conteúdo
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Positioning Section -->
+        <section id="css-positioning" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Posicionamento CSS</h2>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="relative bg-stone-200 h-64 rounded-lg p-4">
+              <div
+                id="positioned-element"
+                class="absolute bg-red-500 text-white p-4 rounded-lg"
+                style="top: 20px; left: 20px"
+              >
+                Elemento posicionado
+              </div>
+            </div>
+            <div class="mt-4 grid grid-cols-2 gap-4">
+              <button
+                id="move-top"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Top
+              </button>
+              <button
+                id="move-right"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Right
+              </button>
+              <button
+                id="move-bottom"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Bottom
+              </button>
+              <button
+                id="move-left"
+                class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+              >
+                Left
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Flexbox Section -->
+        <section id="layout-flexbox" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">CSS Flexbox</h2>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="grid md:grid-cols-3 gap-4 mb-4">
+              <div>
+                <label for="flex-direction" class="text-sm font-medium"
+                  >flex-direction:</label
+                >
+                <select
+                  id="flex-direction"
+                  class="mt-1 block w-full rounded-md border-stone-300"
+                >
+                  <option value="row">row</option>
+                  <option value="column">column</option>
+                </select>
+              </div>
+              <div>
+                <label for="justify-content" class="text-sm font-medium"
+                  >justify-content:</label
+                >
+                <select
+                  id="justify-content"
+                  class="mt-1 block w-full rounded-md border-stone-300"
+                >
+                  <option value="flex-start">flex-start</option>
+                  <option value="center">center</option>
+                  <option value="flex-end">flex-end</option>
+                </select>
+              </div>
+              <div>
+                <label for="align-items" class="text-sm font-medium"
+                  >align-items:</label
+                >
+                <select
+                  id="align-items"
+                  class="mt-1 block w-full rounded-md border-stone-300"
+                >
+                  <option value="stretch">stretch</option>
+                  <option value="center">center</option>
+                </select>
+              </div>
+            </div>
+            <div
+              id="flexbox-container"
+              class="flex bg-stone-200 min-h-[250px] p-2 rounded-lg"
+            >
+              <div class="bg-teal-500 text-white p-4 rounded m-2 text-center">
+                Item 1
+              </div>
+              <div class="bg-cyan-500 text-white p-4 rounded m-2 text-center">
+                Item 2
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Grid Section -->
+        <section id="layout-grid" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">CSS Grid Layout</h2>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="grid md:grid-cols-2 gap-4 mb-4">
+              <div>
+                <label for="grid-cols" class="text-sm font-medium"
+                  >grid-template-columns:</label
+                >
+                <select
+                  id="grid-cols"
+                  class="mt-1 block w-full rounded-md border-stone-300"
+                >
+                  <option value="1fr 1fr">2 colunas</option>
+                  <option value="1fr 1fr 1fr">3 colunas</option>
+                </select>
+              </div>
+              <div>
+                <label for="grid-gap" class="text-sm font-medium"
+                  >gap: <span id="grid-gap-value">1</span>rem</label
+                >
+                <input
+                  id="grid-gap"
+                  type="range"
+                  min="0"
+                  max="4"
+                  step="0.5"
+                  value="1"
+                  class="w-full"
+                />
+              </div>
+            </div>
+            <div
+              id="grid-container"
+              class="grid bg-stone-200 min-h-[250px] p-4 rounded-lg"
+            >
+              <div class="bg-indigo-500 text-white p-4 rounded text-center">
+                Item 1
+              </div>
+              <div class="bg-violet-500 text-white p-4 rounded text-center">
+                Item 2
+              </div>
+              <div class="bg-purple-500 text-white p-4 rounded text-center">
+                Item 3
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Responsive Design Section -->
+        <section id="layout-responsive" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Design Responsivo</h2>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="bg-stone-200 p-4 rounded-lg text-center">
+              <p class="text-lg font-medium">
+                Largura da Janela:
+                <span id="viewport-width" class="font-bold"></span>px
+              </p>
+              <p
+                id="breakpoint-info"
+                class="text-xl font-bold mt-2 text-white p-2 rounded-md"
+              ></p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Transitions Section -->
+        <section id="interactive-transitions" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Transições e Animações</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex gap-4">
+                <button
+                  id="transition-btn"
+                  class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md transition-all duration-300"
+                >
+                  Hover Me
+                </button>
+              </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <div class="flex justify-center items-center h-24">
+                <div
+                  id="animated-element"
+                  class="w-24 h-24 bg-red-500 rounded-full"
+                ></div>
+              </div>
+              <button
+                id="toggle-animation"
+                class="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+              >
+                Toggle Animation
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- DevTools Section -->
+        <section id="tools-devtools" class="content-section">
+          <h2 class="text-4xl font-bold mb-4">Ferramentas de Desenvolvedor</h2>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <div class="flex border-b border-stone-300">
+              <button
+                data-tab="inspector"
+                class="devtools-tab py-2 px-4 font-medium text-stone-600 hover:text-indigo-600 border-b-2 border-transparent hover:border-indigo-500"
+              >
+                Inspector
+              </button>
+              <button
+                data-tab="console"
+                class="devtools-tab py-2 px-4 font-medium text-stone-600 hover:text-indigo-600 border-b-2 border-transparent hover:border-indigo-500"
+              >
+                Console
+              </button>
+            </div>
+            <div
+              id="devtools-content"
+              class="mt-4 p-4 bg-stone-50 rounded-b-lg min-h-[150px]"
+            >
+              <div id="tab-content-inspector" class="devtools-pane">
+                <h4 class="font-bold text-lg">Inspector</h4>
+                <p>Permite visualizar e editar o HTML e CSS.</p>
+              </div>
+              <div id="tab-content-console" class="devtools-pane hidden">
+                <h4 class="font-bold text-lg">Console</h4>
+                <p>Para executar JavaScript e ver logs.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
