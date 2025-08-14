@@ -1,0 +1,55 @@
+.text {
+  display: flex;
+  background-image: url(img/filmes.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  align-items: flex-end;
+  font-size: x-large;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+.btn-menu a:hover {
+  background-color: rgb(173, 0, 0);
+  color: black;
+}
+
+.images {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 400px;
+  width: 100%;
+}
+
+.images img {
+  width: 120px;
+  height: 180px;
+  align-items: flex-start;
+}
+
+.image1 {
+  align-self: center;
+}
+
+.image3 {
+  align-self: center;
+}
+
+.image5 {
+  align-self: center;
+}
+
+.image7 {
+  align-self: center;
+}
+
+.image9 {
+  align-self: center;
+}
